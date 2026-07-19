@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en-GB"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get a Quote | Contact Everglow Commercial Cleaning</title>
+<meta name="description" content="Request a commercial cleaning quote from Everglow Cleaners Limited. Contract cleaning for offices, schools and councils across the North East.">
+<link rel="canonical" href="https://www.everglowcleanerslimited.co.uk/contact.html">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head><body data-page="contact.html">
+<div id="site-header"></div>
+<section class="page-hero"><div class="container">
+<div class="breadcrumb"><a href="index.html" style="color:var(--gray-300)">Home</a> / Contact</div>
+<h1 style="font-size:36px;color:#fff">Request a quote</h1>
+<p style="color:var(--gray-300);margin-top:12px;max-width:600px">Tell us about your site and we'll come back with a proposal within 5 working days.</p>
+</div></section>
+<section><div class="container grid-2">
+<form class="card" style="display:flex;flex-direction:column;gap:18px" onsubmit="event.preventDefault();this.querySelector('.form-success').style.display='block';this.querySelectorAll('input,textarea,select,button').forEach(el=>el.disabled=true)">
+<div class="grid-2" style="gap:18px"><div><label for="name">Full name</label><input id="name" required></div><div><label for="org">Organisation</label><input id="org" required></div></div>
+<div class="grid-2" style="gap:18px"><div><label for="email">Email</label><input id="email" type="email" required></div><div><label for="phone">Phone</label><input id="phone" type="tel"></div></div>
+<div><label for="sector">Sector</label><select id="sector"><option>Office</option><option>School</option><option>Council</option><option>Other</option></select></div>
+<div><label for="msg">Tell us about your site</label><textarea id="msg" rows="5" placeholder="Number of sites, square footage, current contract end date..."></textarea></div>
+<button class="btn btn-primary" type="submit" style="align-self:flex-start">Send request</button>
+<p class="form-success" style="display:none;color:var(--navy-700);font-size:14px;font-weight:600">Thanks — we'll be in touch within 1 working day.</p>
+</form>
+<div>
+<div class="card" style="margin-bottom:20px">
+<h3 style="font-size:18px">Registered office</h3>
+<p style="font-size:14px;color:var(--gray-500);margin-top:10px">Novus Business Centre, Judson Road<br>North West Industrial Estate<br>Peterlee, SR8 2QJ</p>
+</div>
+<div class="card" style="margin-bottom:20px">
+<h3 style="font-size:18px">Direct contact</h3>
+<p style="font-size:14px;color:var(--gray-500);margin-top:10px">07459 503353<br>info@everglowcleanerslimited.co.uk</p>
+</div>
+<div class="card"><h3 style="font-size:18px">Office hours</h3><p style="font-size:14px;color:var(--gray-500);margin-top:10px">Mon–Fri, 8:00–18:00<br>24/7 emergency line for existing contracts</p></div>
+</div>
+</div></section>
+<div id="site-footer"></div>
+<script src="common.js"></script>
+</body></html>
