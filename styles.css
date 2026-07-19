@@ -44,7 +44,7 @@ footer.site-footer{background:var(--navy-950);color:var(--gray-300);padding:64px
 section{padding:var(--space-section) 0}
 .section-alt{background:var(--gray-50)}
 .hero{background:linear-gradient(135deg,var(--navy-900),var(--navy-700));color:#fff;position:relative;overflow:hidden}
-.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(221,122,46,.25),transparent 55%)}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(221,122,46,.25),transparent 55%);pointer-events:none}
 .hero-inner{position:relative;padding:110px 0 90px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
 .badge-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:6px 14px;border-radius:999px;font-size:13px;color:var(--orange-300);font-weight:600}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
@@ -54,7 +54,7 @@ section{padding:var(--space-section) 0}
 .stat .num{font-family:var(--font-display);font-size:40px;color:var(--navy-800)}
 .stat .label{font-size:13px;color:var(--gray-500);margin-top:4px}
 .cta-banner{background:var(--navy-900);color:#fff;border-radius:var(--radius-lg);padding:56px;display:flex;justify-content:space-between;align-items:center;position:relative;overflow:hidden}
-.cta-banner::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,rgba(221,122,46,.25),transparent 60%)}
+.cta-banner::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 90% 0%,rgba(221,122,46,.25),transparent 60%);pointer-events:none}
 .page-hero{background:var(--navy-900);color:#fff;padding:72px 0}
 .hero h1,.hero h2,.hero h3,.page-hero h1,.page-hero h2,.page-hero h3,.cta-banner h1,.cta-banner h2,.cta-banner h3{color:#fff}
 .breadcrumb{font-size:13px;color:var(--gray-300);margin-bottom:16px}
