@@ -75,3 +75,7 @@ nav.main-nav{display:none}
 .footer-grid{grid-template-columns:1fr}
 .cta-banner{flex-direction:column;gap:24px;text-align:center}
 }
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:999;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.25);transition:transform .15s ease}
+.whatsapp-float:hover{transform:scale(1.08)}
+.whatsapp-float svg{width:30px;height:30px}
+@media(max-width:560px){.whatsapp-float{bottom:16px;right:16px;width:52px;height:52px}}
