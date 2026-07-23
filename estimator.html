@@ -1,0 +1,203 @@
+<!DOCTYPE html><html lang="en-GB"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CNRGGVPKT0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CNRGGVPKT0');
+</script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instant Cleaning Quote Estimator | Everglow Cleaners Limited</title>
+<meta name="description" content="Get an instant estimated price for commercial cleaning across the North East. Enter your site details for an approximate per-visit, monthly and annual quote.">
+<link rel="canonical" href="https://everglowcleanerslimited.co.uk/estimator">
+<meta property="og:title" content="Instant Cleaning Quote Estimator | Everglow Cleaners Limited">
+<meta property="og:description" content="Get an instant estimated price for commercial cleaning across the North East.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://everglowcleanerslimited.co.uk/estimator">
+<meta property="og:image" content="https://everglowcleanerslimited.co.uk/assets/branded-van.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Instant Cleaning Quote Estimator | Everglow Cleaners Limited">
+<meta name="twitter:description" content="Get an instant estimated price for commercial cleaning across the North East.">
+<meta name="twitter:image" content="https://everglowcleanerslimited.co.uk/assets/branded-van.jpg">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head><body data-page="/estimator">
+<div id="site-header"></div>
+
+<section class="page-hero"><div class="container">
+<div class="breadcrumb"><a href="/" style="color:var(--gray-300)">Home</a> / Instant Quote Estimator</div>
+<h1 style="font-size:36px;color:#fff">Get an instant estimate</h1>
+<p style="color:var(--gray-300);margin-top:12px;max-width:600px">Answer a few quick questions about your site for an approximate price. This is a starting-point estimate — every quote is confirmed with a free site visit before any contract begins.</p>
+</div></section>
+
+<section><div class="container">
+<div class="grid-2" style="align-items:start;gap:40px">
+
+<div class="card">
+<h3 style="font-size:19px;margin-bottom:20px">Your site details</h3>
+
+<label for="est-type">Building / service type</label>
+<select id="est-type" style="margin-bottom:20px">
+<option value="standard">Standard commercial (office, retail, general)</option>
+<option value="specialist">Specialist (healthcare, industrial, schools)</option>
+</select>
+
+<label for="est-freq">Cleaning frequency</label>
+<select id="est-freq" style="margin-bottom:20px">
+<option value="daily">Daily</option>
+<option value="weekly" selected>Weekly</option>
+<option value="fortnightly">Fortnightly</option>
+<option value="monthly">Monthly / One-off</option>
+</select>
+
+<label for="est-deep">Deep clean / intensive one-off?</label>
+<select id="est-deep" style="margin-bottom:20px">
+<option value="no">No — standard clean</option>
+<option value="yes">Yes — deep clean</option>
+</select>
+
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div><label for="est-desks">Desks / workstations</label><input type="number" id="est-desks" min="0" value="0"></div>
+<div><label for="est-offices">Private offices</label><input type="number" id="est-offices" min="0" value="0"></div>
+<div><label for="est-meeting">Meeting rooms</label><input type="number" id="est-meeting" min="0" value="0"></div>
+<div><label for="est-reception">Reception areas</label><input type="number" id="est-reception" min="0" value="0"></div>
+<div><label for="est-washroom">Washrooms / WCs</label><input type="number" id="est-washroom" min="0" value="0"></div>
+<div><label for="est-kitchen">Kitchens / breakrooms</label><input type="number" id="est-kitchen" min="0" value="0"></div>
+<div><label for="est-corridor">Corridors (per 10m)</label><input type="number" id="est-corridor" min="0" value="0"></div>
+<div><label for="est-other">Other communal areas</label><input type="number" id="est-other" min="0" value="0"></div>
+</div>
+
+<h3 style="font-size:16px;margin-top:28px;margin-bottom:12px">Optional add-ons (one-off)</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div><label for="est-carpet">Carpet area to clean (sq m)</label><input type="number" id="est-carpet" min="0" value="0"></div>
+<div><label for="est-windows">Window panes</label><input type="number" id="est-windows" min="0" value="0"></div>
+</div>
+
+<button id="est-calc" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:28px">Calculate my estimate</button>
+</div>
+
+<div>
+<div class="card" style="background:var(--navy-900);border:none;color:#fff;position:sticky;top:100px">
+<span class="eyebrow" style="color:var(--orange-300)">Your estimate</span>
+<div id="est-empty" style="margin-top:16px;color:var(--gray-300);font-size:14px">Fill in your site details and click "Calculate my estimate" to see a price.</div>
+<div id="est-results" style="display:none;margin-top:16px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)">
+<span style="color:var(--gray-300);font-size:14px">Per visit</span>
+<span id="est-per-visit" style="font-family:var(--font-display);font-size:28px">£0</span>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)">
+<span style="color:var(--gray-300);font-size:14px">Estimated monthly value</span>
+<span id="est-monthly" style="font-size:18px;font-weight:600">£0</span>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)">
+<span style="color:var(--gray-300);font-size:14px">Estimated annual value</span>
+<span id="est-annual" style="font-size:18px;font-weight:600">£0</span>
+</div>
+<div id="est-addons-row" style="display:none;justify-content:space-between;align-items:baseline;padding:16px 0">
+<span style="color:var(--gray-300);font-size:14px">One-off add-ons (this visit)</span>
+<span id="est-addons" style="font-size:16px">£0</span>
+</div>
+<p style="font-size:12px;color:var(--gray-300);margin-top:16px">This is an estimate only, excludes VAT, and will be confirmed with a free site visit.</p>
+<a class="btn btn-primary" href="/contact" style="width:100%;justify-content:center;margin-top:16px">Request a confirmed quote</a>
+</div>
+</div>
+</div>
+
+</div>
+</div></section>
+
+<div id="site-footer"></div>
+<script src="common.js"></script>
+<script>
+const RATES = {
+  hourlyRate: 13.5,
+  minutesPerArea: { desks:2, offices:6, meeting:8, reception:12, washroom:15, kitchen:15, corridor:5, other:10 },
+  carpetMinPerSqm: 2,
+  windowMinPerPane: 1.5,
+  margin: 0.6,
+  overheadPct: 0.10,
+  suppliesPct: 0.05,
+  marketMultiplier: 2.2,
+  minCharge: 60,
+  freq: {
+    daily:       { discount: 0.8,  visitsPerMonth: 22 },
+    weekly:      { discount: 0.9,  visitsPerMonth: 4.33 },
+    fortnightly: { discount: 0.95, visitsPerMonth: 2.17 },
+    monthly:     { discount: 1.0,  visitsPerMonth: 1 }
+  },
+  typePremium: { standard: 0, specialist: 0.25 },
+  deepCleanUplift: 0.20
+};
+
+function priceFromCost(totalCost){
+  return totalCost / (1 - RATES.margin);
+}
+
+function costFromMinutes(minutes){
+  const hours = minutes / 60;
+  const labour = hours * RATES.hourlyRate;
+  const overhead = labour * RATES.overheadPct;
+  const supplies = (labour + overhead) * RATES.suppliesPct;
+  return labour + overhead + supplies;
+}
+
+function calculate(){
+  const val = id => parseFloat(document.getElementById(id).value) || 0;
+  const type = document.getElementById('est-type').value;
+  const freqKey = document.getElementById('est-freq').value;
+  const isDeep = document.getElementById('est-deep').value === 'yes';
+
+  const totalMinutes =
+    val('est-desks')     * RATES.minutesPerArea.desks +
+    val('est-offices')   * RATES.minutesPerArea.offices +
+    val('est-meeting')   * RATES.minutesPerArea.meeting +
+    val('est-reception') * RATES.minutesPerArea.reception +
+    val('est-washroom')  * RATES.minutesPerArea.washroom +
+    val('est-kitchen')   * RATES.minutesPerArea.kitchen +
+    val('est-corridor')  * RATES.minutesPerArea.corridor +
+    val('est-other')     * RATES.minutesPerArea.other;
+
+  const baseCost = costFromMinutes(totalMinutes);
+  let price = priceFromCost(baseCost) * RATES.marketMultiplier;
+  price = price * (1 + RATES.typePremium[type]);
+  if (isDeep) price = price * (1 + RATES.deepCleanUplift);
+  const freq = RATES.freq[freqKey];
+  price = price * freq.discount;
+  price = Math.max(price, RATES.minCharge);
+
+  // Add-ons (one-off, not affected by frequency/type/deep uplift)
+  let addons = 0;
+  const carpetSqm = val('est-carpet');
+  if (carpetSqm > 0){
+    const carpetCost = costFromMinutes(carpetSqm * RATES.carpetMinPerSqm);
+    addons += priceFromCost(carpetCost) * RATES.marketMultiplier;
+  }
+  const panes = val('est-windows');
+  if (panes > 0){
+    const windowCost = costFromMinutes(panes * RATES.windowMinPerPane);
+    addons += Math.max(priceFromCost(windowCost) * RATES.marketMultiplier, RATES.minCharge);
+  }
+
+  const monthly = price * freq.visitsPerMonth;
+  const annual = monthly * 12;
+
+  document.getElementById('est-per-visit').textContent = '£' + price.toFixed(0);
+  document.getElementById('est-monthly').textContent = '£' + monthly.toFixed(0);
+  document.getElementById('est-annual').textContent = '£' + annual.toFixed(0);
+  if (addons > 0){
+    document.getElementById('est-addons-row').style.display = 'flex';
+    document.getElementById('est-addons').textContent = '£' + addons.toFixed(0);
+  } else {
+    document.getElementById('est-addons-row').style.display = 'none';
+  }
+  document.getElementById('est-empty').style.display = 'none';
+  document.getElementById('est-results').style.display = 'block';
+}
+
+document.getElementById('est-calc').addEventListener('click', calculate);
+</script>
+</body></html>

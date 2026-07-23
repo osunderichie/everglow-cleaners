@@ -1,0 +1,19 @@
+# Main pages
+/services/                    /services.html                    301
+/contact/                     /contact.html                     301
+/about/                       /about.html                       301
+/careers/                     /careers.html                     301
+/sectors/                     /sectors.html                     301
+/estimator/                   /estimator.html                   301
+
+# Remove old WordPress demo content
+/join-us/                                   /                  301
+/category/*                                 /                  301
+/author/*                                   /                  301
+/portfolio/*                                /                  301
+/5-reasons-to-purchase-desktop-computers/   /                  301
+/utilizing-mobile-technology-in-the-field/  /                  301
+
+# Optional: redirect old WordPress feeds
+/feed                                       /                  301
+/comments/feed                              /                  301
