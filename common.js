@@ -23,7 +23,7 @@ document.getElementById('site-footer').innerHTML=`
 <a href="/services">Office Cleaning</a><a href="/services">Deep Cleaning</a><a href="/services">Washroom &amp; Hygiene</a><a href="/services">Window &amp; Glass Cleaning</a>
 </div>
 <div class="footer-col"><h4>Company</h4>
-<a href="/about">About us</a><a href="/sectors">Sectors</a><a href="/careers">Careers</a><a href="/contact">Contact</a>
+<a href="/about">About us</a><a href="/sectors">Sectors</a><a href="/areas-we-cover">Areas We Cover</a><a href="/careers">Careers</a><a href="/contact">Contact</a>
 </div>
 <div class="footer-col"><h4>Contact</h4>
 <a href="tel:+447459503353">07459 503353</a><a href="mailto:info@everglowcleanerslimited.co.uk">info@everglowcleanerslimited.co.uk</a><span style="display:block;font-size:14px;color:var(--gray-300)">Novus Business Centre, Judson Road, North West Industrial Estate, Peterlee, SR8 2QJ</span>

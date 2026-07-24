@@ -6,6 +6,7 @@
 /sectors/                     /sectors.html                     301
 /estimator/                   /estimator.html                   301
 /privacy/                     /privacy.html                     301
+/areas-we-cover/              /areas-we-cover.html              301
 
 # Remove old WordPress demo content
 /join-us/                                   /                  301
