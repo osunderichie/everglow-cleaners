@@ -29,7 +29,7 @@ document.getElementById('site-footer').innerHTML=`
 <a href="tel:+447459503353">07459 503353</a><a href="mailto:info@everglowcleanerslimited.co.uk">info@everglowcleanerslimited.co.uk</a><span style="display:block;font-size:14px;color:var(--gray-300)">Novus Business Centre, Judson Road, North West Industrial Estate, Peterlee, SR8 2QJ</span>
 </div>
 </div>
-<div class="footer-bottom"><span>© ${new Date().getFullYear()} Everglow Cleaners Limited. All rights reserved.</span><span>Registered in England &amp; Wales — Company No. 16001320</span>
+<div class="footer-bottom"><span>© ${new Date().getFullYear()} Everglow Cleaners Limited. All rights reserved.</span><span>Registered in England &amp; Wales — Company No. 16001320</span><a href="/privacy" style="color:var(--gray-300)">Privacy Policy</a>
 </div></footer>`;
 }
 function renderWhatsAppButton(){
